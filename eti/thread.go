@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"code.google.com/p/go.net/html"
-	"code.google.com/p/go.net/html/atom"
+	"golang.org/x/net/html"
+	"golang.org/x/net/html/atom"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/guregu/bbs"
 	_ "labix.org/v2/mgo/bson"

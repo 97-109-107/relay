@@ -457,7 +457,7 @@ func (eti *ETI) LogIn(m bbs.LoginCommand) bool {
 	username := m.Username
 	password := m.Password
 	jar, _ := cookiejar.New(nil)
-	c := &http.Client{nil, nil, jar}
+	c := &http.Client{nil, nil, jar,0}
 	resp, _ := c.PostForm(loginURL, url.Values{
 		"username": {username},
 		"password": {password},
